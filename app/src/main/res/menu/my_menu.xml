@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item
+            android:title="Back"
+            android:id="@+id/back"  />
+        <item
+            android:title="Forward"
+            android:id="@+id/fwd"  />
+        <item
+            android:title="Refresh"
+            android:id="@+id/rfsh"  />
+        <item
+            android:title="clear History"
+            android:id="@+id/hstry"  />
+</menu>
+
