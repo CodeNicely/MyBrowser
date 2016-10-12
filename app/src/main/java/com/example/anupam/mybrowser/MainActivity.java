@@ -50,34 +50,35 @@ public class MainActivity extends AppCompatActivity {
         me.inflate(R.menu.my_menu, menu);
         return true;
     }
-        @Override
-        public boolean onOptionsItemSelected(MenuItem item) {
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
 
 
-            switch (item.getItemId()) {
-                case R.id.back:
-                    if (webView1.canGoBack()) {
+        switch (item.getItemId()) {
+            case R.id.back:
+                if (webView1.canGoBack()) {
 
-                        webView1.goBack();
-                    }
-                    break;
+                    webView1.goBack();
+                }
+                break;
 
-                case R.id.fwd:
+            case R.id.fwd:
 
-                    if (webView1.canGoForward()) {
+                if (webView1.canGoForward()) {
 
-                        webView1.goForward();
-                    }
-                    break;
+                    webView1.goForward();
+                }
+                break;
 
-                case R.id.rfsh:
-                    webView1.reload();
-                    break;
+            case R.id.rfsh:
+                webView1.reload();
+                break;
 
-                case R.id.hstry:
-                    webView1.clearHistory();
-                    break;
-            }
-            return false;
+            case R.id.hstry:
+                webView1.clearHistory();
+                break;
         }
+        return false;
+    }
 }
